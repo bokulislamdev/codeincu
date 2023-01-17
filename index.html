@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traincu</title>
+    <!--    BOOSTRAP-->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
+
+    <!-- FONTAWSOME6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--    BOOSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--    GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--    SLICK SLIDER-->
+    <link rel="stylesheet" href="asset/css/slick.css">
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+    <!--    <link rel="stylesheet" href="asset/css/arabic.css">-->
+</head>
+
+<body>
+
+    <!--    HEADER SECTION-->
+    <header class="py-2 py-sm-3 py-md-4">
+        <div class="container-fluid">
+            <div class="d-flex px-3 align-items-center">
+
+                <div class="flex-fill">
+                    <div class="logo d-flex justify-content-between align-items-center w-100">
+                        <a href="#">
+                            <img src="asset/images/logo/logo.png" alt="">
+                        </a>
+                        <i class="fa fa-bars d-xl-none" onClick="mobileClick()"></i>
+                    </div>
+                </div>
+
+
+                <div class="menubar d-none d-xl-block flex-fill">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Recruitment</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+
+
+
+
+
+                    </ul>
+                </div>
+                <div class="flex-fill d-none d-xl-block">
+                    <div class="cart-box d-flex align-itmes-center">
+                        <div class="menubar me-3">
+
+                            <ul>
+                                <li class="sub-btn">
+                                    <a href="#"> <i class="bi bi-person"></i> Accounts </a>
+
+
+                                    <div class="sub-menu">
+                                        <a href="#">Sign In</a>
+                                        <a href="#">Login</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="d-flex cart-box-cart">
+                            <div>
+                                <img src="asset/images/icons/cart-bag.png" alt="">
+                            </div>
+                            <div>
+                                <span>Your Order</span>
+                                <h6>05 Items</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+    <!--    HEADER SECTION END-->
+
+
+
+    <!--    MOBILE MENU-->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-3">
+                <a href="#">
+                    <img src="asset/images/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            About us
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Download
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Course
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Notice
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            E-Book
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Contact
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Sign In
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+            <!--
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        All Category
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Lip Gloss</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Body Lotion</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Cream</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Garnier</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+-->
+
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--    MOBILE MENU END-->
+
+    <!-- BANNER PART START -->
+    <section class="banner">
+        <div class="home_slide">
+            <div class="banner-overlay" style="background-image: url(asset/images/photos/home-bg.png)">
+                <div class="container py-5">
+                    <div class="banner-content py-5">
+                        <h1>
+                            Codeincu helps you get the global <span>GS1</span> and <span>Aloegram barcodes</span> that work for all retailers
+                        </h1>
+                        <div class="banner-btn mt-5">
+                            <a href="#">Order Now</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-overlay" style="background-image: url(asset/images/photos/home-bg.png)">
+                <div class="container py-5">
+                    <div class="banner-content py-5">
+                        <h1>
+                            Codeincu helps you get the global <span>GS1</span> and <span>Aloegram barcodes</span> that work for all retailers
+                        </h1>
+                        <div class="banner-btn mt-5">
+                            <a href="#">Order Now</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-overlay" style="background-image: url(asset/images/photos/home-bg.png)">
+                <div class="container py-5">
+                    <div class="banner-content py-5">
+                        <h1>
+                            Codeincu helps you get the global <span>GS1</span> and <span>Aloegram barcodes</span> that work for all retailers
+                        </h1>
+                        <div class="banner-btn mt-5">
+                            <a href="#">Order Now</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER PART END -->
+    
+    <!--    HELP SECTION-->
+    <section class="help-section py-5">
+        <div class="container">
+            <div class="help-header text-center">
+                <h4>We help you to get Code</h4>
+            </div>
+            
+            <div class="custom-row mt-5 justify-content-center">
+                <div class="help-col">
+                    <div class="help-box">
+                        <div class="help-img">
+                            <img src="asset/images/photos/help-1.png" alt="">
+                        </div>
+                        
+                        <p>
+                            GS1 Company
+                        </p>
+                    </div>
+                </div>
+                <div class="help-col">
+                    <div class="help-box">
+                       <div class="help-img">
+                        <img src="asset/images/photos/help-2.png" alt="">
+                        </div>
+                        
+                        <p>
+                            QR Code
+                        </p>
+                    </div>
+                </div>
+                <div class="help-col">
+                    <div class="help-box">
+                       <div class="help-img">
+                        <img src="asset/images/photos/help-3.png" alt="">
+                        </div>
+                        
+                        <p>
+                            Augmented reality
+                        </p>
+                    </div>
+                </div>
+                <div class="help-col">
+                    <div class="help-box">
+                       <div class="help-img">
+                        <img src="asset/images/photos/help-4.png" alt="">
+                        </div>
+                        
+                        <p>
+                            Virtual Reality
+                        </p>
+                    </div>
+                </div>
+                <div class="help-col">
+                    <div class="help-box">
+                       <div class="help-img">
+                        <img src="asset/images/photos/help-1.png" alt="">
+                        </div>
+                        
+                        <p>
+                            Digital certification
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    HELP SECTION END-->
+    
+    <!--    WHY SECTION-->
+    <section class="why-section py-5">
+        <div class="container">
+            <div class="why-head">
+                <h3>Why Codeincu?</h3>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-lg-4 pb-3">
+                    <div class="why-box">
+                        <h6>100% AUTHENTIC GS1 VERIFIED CODES</h6>
+                        <p>
+                            We offer only genuine barcodes that have been were originally issued by the UCC, now known as GS1 and never used. Our barcodes work perfectly on Amazon, eBay, Google, iTunes, Jet and many others without any issue.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pb-3">
+                    <div class="why-box">
+                        <h6>100% AUTHENTIC GS1 VERIFIED CODES</h6>
+                        <p>
+                            We offer only genuine barcodes that have been were originally issued by the UCC, now known as GS1 and never used. Our barcodes work perfectly on Amazon, eBay, Google, iTunes, Jet and many others without any issue.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pb-3">
+                    <div class="why-box">
+                        <h6>100% AUTHENTIC GS1 VERIFIED CODES</h6>
+                        <p>
+                            We offer only genuine barcodes that have been were originally issued by the UCC, now known as GS1 and never used. Our barcodes work perfectly on Amazon, eBay, Google, iTunes, Jet and many others without any issue.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pb-3">
+                    <div class="why-box">
+                        <h6>100% AUTHENTIC GS1 VERIFIED CODES</h6>
+                        <p>
+                            We offer only genuine barcodes that have been were originally issued by the UCC, now known as GS1 and never used. Our barcodes work perfectly on Amazon, eBay, Google, iTunes, Jet and many others without any issue.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pb-3">
+                    <div class="why-box">
+                        <h6>100% AUTHENTIC GS1 VERIFIED CODES</h6>
+                        <p>
+                            We offer only genuine barcodes that have been were originally issued by the UCC, now known as GS1 and never used. Our barcodes work perfectly on Amazon, eBay, Google, iTunes, Jet and many others without any issue.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 pb-3">
+                    <div class="why-box">
+                        <h6>100% AUTHENTIC GS1 VERIFIED CODES</h6>
+                        <p>
+                            We offer only genuine barcodes that have been were originally issued by the UCC, now known as GS1 and never used. Our barcodes work perfectly on Amazon, eBay, Google, iTunes, Jet and many others without any issue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    WHY SECTION END-->
+    
+    <!--    SERVICE SECTION-->
+    <section class="service-section py-5">
+        <div class="container">
+            <div class="service-head">
+                <h3>Our Services</h3>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-4 pb-4 pb-md-0">
+                    <div class="service-box">
+                        <img src="asset/images/photos/service-1.png" alt="">
+                        
+                        <h6>Global Standard 1 Services</h6>
+                        
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                 <div class="col-12 col-sm-6 col-md-4 pb-4 pb-md-0">
+                    <div class="service-box">
+                        <img src="asset/images/photos/service-2.png" alt="">
+                        
+                        <h6>QR Code Solutions & Services</h6>
+                        
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                 <div class="col-12 col-sm-6 col-md-4 pb-4 pb-md-0">
+                    <div class="service-box">
+                        <img src="asset/images/photos/service-3.png" alt="">
+                        
+                        <h6>Digital certification</h6>
+                        
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    SERVICE SECTION END-->
+    
+    <!--    ABOUT SECTION-->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="about-text">
+                        <h4>Who are we?</h4>
+                        <div class="py-3">
+                            <p>
+                                Codeincu helps you get the global GS1 and Aloegram barcodes that work for all retailers such as Amazon, eBay and iTunes.
+                            </p>
+                            <p>
+                                We offer you the best barcode rates
+                            </p>
+                        </div>
+                        
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="about-img">
+                        <img src="asset/images/photos/about.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ABOUT SECTION END-->
+
+
+    <!--    FOOTER-->
+    <footer class="py-4">
+        <div class="container pt-5">
+            <div class="footer-top">
+                <h4>Get in Touch</h4>
+                <div class="footer-top-content mt-3">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="footer-location">
+                                <p>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Guard Incubator, Kaldia Tower, Riadah,
+                                    Saudi Arabia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="footer-location">
+                                <p>
+                                    <i class="bi bi-envelope"></i>
+                                    info@codeincubator.com
+                                </p>
+                            </div>
+                            <div class="footer-location">
+                                <p>
+                                    <i class="bi bi-telephone-plus"></i>
+                                    +996 021 121 21
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-main mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="asset/images/logo/dark-logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <p class="mt-4">
+                                Make authenticate Brand
+                            </p>
+                            <div class="footer-social">
+                                <h5>Follow us:</h5>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-solid fa-camera"></i>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Our Compay</h6>
+                            <ul>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> About us</a>
+                                </li>
+                                <li>
+
+                                    <a href="#">
+                                        <i class="bi bi-chevron-double-right"></i>
+                                        Training & Reqruitment
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Our Services</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Importent Link</h6>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="bi bi-chevron-double-right"></i> Call us to Installation</a>
+                                </li>
+                                <li>
+
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Installation Package</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Guard Equipment</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Apply to be Guard</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-chevron-double-right"></i> Terms & Condition</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-chevron-double-right"></i> Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Contact us</h6>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="bi bi-chevron-double-right"></i> Risk & assasment</a>
+                                </li>
+                                <li>
+
+                                    <a href="#"><i class="bi bi-chevron-double-right"></i> Logistic Services</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-chevron-double-right"></i> Labour Facilities</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-chevron-double-right"></i> More Service</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright mt-5 pt-4">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <p>
+                            Copyright © 2022 All rights reserved by Code Incubator
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="copyright-menu text-center text-lg-end">
+                            <a href="#">
+                                Terms & condition
+                            </a>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                            <a href="#">
+                                Business Policy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER END-->
+
+
+
+    <!--    JQUERY GOOGLE HOST-->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+    <script src="asset/js/jquery.min.js"></script>
+    <!--    BOOSTRAP-->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>-->
+
+    <!--    SLICK SLIDER-->
+    <script src="asset/js/slick.min.js"></script>
+
+    <script>
+        //        MOBILE MENU
+        function mobileClick() {
+            $("#mobile-menu").toggleClass('mobileAdd');
+            $("#mobileOverlay").toggleClass('mobile-overlay');
+        }
+        //        MOBILE MENU END
+
+        $('.home_slide').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            autoplay: true,
+            slidesToShow: 1,
+            arrows: false,
+            slidesToScroll: 1,
+        });
+
+    </script>
+</body>
+
+</html>
